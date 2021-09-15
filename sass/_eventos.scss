@@ -1,0 +1,32 @@
+.container-eventos{
+    max-width:1000px;
+    width: 100%;
+    margin: 0 auto; 
+    min-width: 350px;
+    
+  
+      .card {
+        background: white;
+        border-radius: 15px;
+        padding: 20px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        position: relative;
+        margin-bottom: 50px;
+      }
+  
+      img {
+        max-width: 400px;
+        max-height: 300px;
+      }
+  
+      .card__img {
+        max-width: 800px;
+      }
+  
+  
+  }

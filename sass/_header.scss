@@ -1,0 +1,41 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: sans-serif;
+  }
+
+
+body{
+    background-image: url(/imagenes/fondoarcoiris.jpg.crdownload); 
+    background-size: cover;
+}
+
+nav{
+    margin-bottom: 30px;
+    margin-right: 30px;
+    width: 100%;
+    margin-top: 20px;
+
+                        ul li{
+                            text-decoration: none;
+                            display: inline;
+                            justify-content: left;
+                            
+                        }
+
+                        a{
+                            background-color:blanchedalmond(248, 222, 245);
+                            color: black;
+                            padding: 8px;
+                            text-decoration: none;
+
+                        }
+                       
+}
+
+a:hover {
+    background-color: lightblue;
+    }
+
