@@ -1,5 +1,6 @@
 @import "header";
 @import "eventos";
+@import "fuentes";
 
 * {
     margin: 0px;
@@ -62,14 +63,6 @@
   
   /* aca comienza ofertas */
   
-  .t-ofertas{
-    h1{     
-      font-size: 70px;
-      text-align: center;
-      font-family: 'Great Vibes', cursive;
-      margin-top: 15px;
-    }
-  }
   
   .col-md-3{
     margin: 20px;
@@ -96,5 +89,119 @@
       margin-top: 15px;
   
   }
+
+  .subtitulo{
+    text-align: center;
+  }
+
+  section{
+    margin: 0 auto;
+    max-width: 70rem;
+    width: 100%;
+}
+
+section .titulo{
+    grid-column-start: 5;
+    grid-column-end: span 4;
+}
+
+
+
+.grilla {   /* aca se forma la grilla */
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px 10px;
+}
+
+.intro .grilla{
+    background-color: rgb(247, 241, 234);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+}
+
+.logo{
+    border-radius: 85px;
+    margin-top: 20px;
+}
+
+section .logo{
+    grid-column-start: 10;
+    grid-column-end: span 2;
+    border-color: black;
+    border: solid;
+
+}
+
+.cuerpo .img-cuerpo{
+    text-align: center;
+    grid-column-end: span 4;
+    box-shadow: 0 0 1em;
+    background-color: snow;
+}
+
+
+.img-cuerpo img{
+    padding: 5px;
+    border-radius: 2%;   
+}
+
+.img-cuerpo:hover{
+    transform: scale(1.1);
+}
+.cuerpo .img-presentacion{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px 10px;  
+}
+
+.cuerpo .img-presentacion{
+    margin: 0 auto;
+    max-width: 70rem;
+    width: 100%;
+}
+
+
+.img-baja h3{
+    text-align: center;
+    margin: 30px;
+}
+
+
+.f-baja{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 15px 15px;  
+}
+
+.f-baja .sub-img{
+    grid-column-end: span 4;
+    border: solid;
+    border-color: white;
+    text-align: center;
+}
+
+.sub-img img{
+    border-radius: 4%;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 15px 15px;  
+    margin: 20px;
+}
+
+.pie {
+    grid-column-start: 2;
+    grid-column-end: span 4;
+    text-align: center;
+}
+
+.redes img{
+    align-items:flex-end;
+}
+
 
 
