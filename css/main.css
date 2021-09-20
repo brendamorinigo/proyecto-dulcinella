@@ -27,6 +27,9 @@ nav ul li {
 }
 
 nav a {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: blanchedalmond(248, 222, 245);
   color: black;
   padding: 8px;
