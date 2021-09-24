@@ -6,11 +6,6 @@
   font-family: sans-serif;
 }
 
-body {
-  background-image: url(/imagenes/fondoarcoiris.jpg.crdownload);
-  background-size: cover;
-}
-
 nav {
   margin-bottom: 30px;
   margin-right: 30px;
@@ -27,9 +22,6 @@ nav ul li {
 }
 
 nav a {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-color: blanchedalmond(248, 222, 245);
   color: black;
   padding: 8px;
@@ -71,34 +63,30 @@ a:hover {
 }
 
 h1 {
-  font-size: 7rem;
+  font-size: 3.5em;
   text-align: center;
   font-family: 'Great Vibes', cursive;
   margin-top: 15px;
-  padding: 20px;
+  padding: 10px;
 }
 
 h2 {
-  padding: 0px;
-  font-size: 50px;
+  padding: 0.625rem;
+  font-size: 2rem;
   font-family: 'Great Vibes', cursive;
   font-size: 2rem;
   margin: auto;
+  text-align: center;
+  color: black;
 }
 
 h3 {
-  padding: 20px;
-  font-size: 40px;
+  padding: 1.25em;
+  font-size: 7em;
   font-family: 'Great Vibes', cursive;
   font-size: 2rem;
-  font-weight: 200px;
-}
-
-strong {
-  font-size: 7rem;
+  font-weight: 12.5em;
   text-align: center;
-  font-family: 'Great Vibes', cursive;
-  margin-top: 15px;
 }
 
 * {
@@ -109,6 +97,11 @@ strong {
   font-family: sans-serif;
 }
 
+body {
+  background-image: url(/imagenes/fondoarcoiris.jpg.crdownload);
+  background-size: cover;
+}
+
 @media screen and (max-width: 800px) {
   .container-eventos {
     width: 400px;
@@ -116,13 +109,6 @@ strong {
 }
 
 /*  aca comieza tienda*/
-section h1 {
-  font-size: 70px;
-  text-align: center;
-  font-family: 'Great Vibes', cursive;
-  margin-top: 15px;
-}
-
 .carousel-inner {
   margin: 0px auto;
   height: 550px;
@@ -171,17 +157,6 @@ section h1 {
 
 /* aca finaliza ofertas */
 /* aca comienza pagina principal */
-strong {
-  font-size: 70px;
-  text-align: center;
-  font-family: 'Great Vibes', cursive;
-  margin-top: 15px;
-}
-
-.subtitulo {
-  text-align: center;
-}
-
 section {
   margin: 0 auto;
   max-width: 70rem;
@@ -204,7 +179,7 @@ section .titulo {
   gap: 10px 10px;
 }
 
-.intro .grilla {
+.container-titulo .grilla {
   background-color: #f7f1ea;
   border-radius: 5px;
   padding: 5px;
@@ -272,7 +247,7 @@ section .logo {
   gap: 15px 15px;
 }
 
-.f-baja .sub-img {
+.sub-img {
   -ms-grid-column-span: 4;
       grid-column-end: span 4;
   border: solid;
@@ -282,6 +257,8 @@ section .logo {
 
 .sub-img img {
   border-radius: 4%;
+  max-width: 400px;
+  max-height: 400px;
 }
 
 footer {

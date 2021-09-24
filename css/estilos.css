@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 3.5em;
+  text-align: center;
+  font-family: 'Great Vibes', cursive;
+  margin-top: 15px;
+  padding: 10px;
+}
+
+h2 {
+  padding: 0.625rem;
+  font-size: 2rem;
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+  margin: auto;
+  text-align: center;
+  color: black;
+}
+
+h3 {
+  padding: 1.25em;
+  font-size: 7em;
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+  font-weight: 12.5em;
+  text-align: center;
+}
+
+body {
+  font-weight: 300;
+  background-image: url(../imagenes/fondoarcoiris.jpg.crdownload);
+  background-size: cover;
+  font-size: 16px;
+}
+
+.img-logo img {
+  width: 100px;
+  height: 100px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 75em;
+  margin: 1.25rem auto;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (auto)[4];
+      grid-template-rows: repeat(4, auto);
+      grid-template-areas: 'header			header   	header' 'destacado		destacado 	destacado' 'contenido		contenido 	aside' 'footer	 		footer 		footer';
+}
+
+/* ---------- HEADER ----------*/
+.header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: header;
+  padding: 1.25rem;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
+          box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
+}
+
+.header .logo {
+  margin-bottom: 1.25em;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.header .img-logo {
+  padding: 0.31em;
+  display: inline-block;
+  font-size: 1rem;
+  margin-bottom: 0.93em;
+}
+
+.menu {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu a {
+  padding: 10px;
+  color: #000;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  width: 100%;
+  text-align: center;
+  -webkit-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+  font-size: 0.8em;
+}
+
+.menu a:hover {
+  background: wheat;
+  color: black;
+}
+
+/* ---------- Articulos ----------*/
+.articulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
+          box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
+}
+
+.articulo .contenedor-texto {
+  padding: 1.25em;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 80%;
+}
+
+.articulo .contenedor-thumbnail {
+  width: 50%;
+}
+
+.articulo .extracto {
+  font-size: 1.25em;
+  margin-bottom: 1.25rem;
+  color: #868b8d;
+}
+
+/* ---------- Articulo Destacado ----------*/
+.articulo.destacado {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: destacado;
+  color: white;
+  background: white;
+  -webkit-box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
+          box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.3fr 1fr;
+      grid-template-columns: 1.3fr 1fr;
+}
+
+.articulo.destacado .contenedor-thumbnail {
+  min-height: 100%;
+  width: 100%;
+}
+
+.destacado .titulo::after {
+  content: '';
+  margin: 0.5em 0;
+  display: block;
+  background-color: #868686;
+  width: 100%;
+  height: 1px;
+}
+
+/*---------- CONTENIDO ----------*/
+.contenido {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: contenido;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1;
+      grid-template-columns: 1;
+  grid-gap: 1.25rem;
+}
+
+/*---------- SIDEBAR ----------*/
+.sidebar {
+  padding: 5em 1.56em;
+  text-align: center;
+  min-height: 6.25rem;
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: aside;
+  background: #000;
+  color: #868b8d;
+  -webkit-box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
+          box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
+}
+
+.sidebar .acerca-de img {
+  border-radius: 100%;
+  height: 10em;
+  width: 10em;
+  margin-bottom: 1.56em;
+}
+
+.sidebar .bio {
+  margin-bottom: 1.56em;
+  font-size: 1.25em;
+  line-height: 1.56em;
+}
+
+.sidebar .menu {
+  width: 100%;
+  display: inline-block;
+  background: #ccc;
+}
+
+.sidebar .menu a {
+  padding: 1.56rem;
+  color: #fff;
+  background-color: #000;
+  display: block;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.sidebar .menu a:hover {
+  background: #262626;
+}
+
+/*---------- FOOTER ----------*/
+.contenedor .footer {
+  background: #fff;
+  font-size: 1.25rem;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: footer;
+  padding: 1.5625rem;
+  text-align: right;
+  -webkit-box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
+          box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
+}
+
+@media (max-width: 1200px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 900px) {
+  .contenedor {
+        grid-template-areas: 'header			header   	header' 'destacado		destacado 	destacado' 'contenido		contenido 	contenido' 'aside           aside      aside   '             'footer	 		footer 		footer';
+  }
+}
+
+@media (max-width: 700px) {
+  .articulo.destacado {
+    -ms-grid-columns: 1.3fr 1fr;
+        grid-template-columns: 1.3fr 1fr;
+  }
+  .articulo.destacado .contenedor-thumbnail {
+    height: 16em;
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    font-size: 0.62em;
+  }
+  .articulo.destacado {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.bio p {
+  color: white;
+}
