@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Pedidos</title>
+</head>
+<body>
+<!-- menu nav -->
+    <div class="contenedor">
+        <header class="header">
+          <div class="logo">
+            <div class="img-logo">
+              <img src="../imagenes/logo.jfif" alt="Logo">
+            </div>
+            </div>
+            <h1>Dulcinella</h1>
+          <nav class="menu">
+            <a href="/index.html">Inicio</a>
+            <a href="./Bombones.html">Bombones</a>
+            <a href="./pedidos.html">Pedidos</a>
+            <a href="./Eventos.html">Eventos</a>
+            <a href="./contacto.html">Contacto</a>
+          </nav>
+        </header>
+      </div>
+<!-- separador -->
+<div class="separador">
+    <p>
+          Si queres realizar un pedido, completa tus datos y dejanos una imagen/captura de lo que deseas y nosotros nos encargamos del resto.
+          <br>
+          Si queres solicitar un presupuesto, hace clik en la casilla presupuesto, y te lo enviaremos a la brevedad.
+    </p>
+</div>      
+<!-- formulario -->
+<div class="formulario">
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Correo</label>
+          <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Telefono</label>
+          <input type="number" class="form-control" id="number">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="inputAddress" >
+        </div>
+        <div class="col-12">
+          <label for="inputAddress2" class="form-label">Apellido</label>
+          <input type="text" class="form-control" id="inputAddress2">
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">Producto</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">Localidad</label>
+          <select id="inputState" class="form-select">
+            <option selected>La plata</option>
+            <option>Berisso</option>
+            <option>Gonnet</option>
+            <option>Punta lara</option>
+            <option>San carlos</option>
+            <option>Los hornos</option>
+          </select>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Presupuesto
+            </label>
+          </div>
+        </div>
+        <form class="was-validated">
+            <div class="mb-3">
+              <label for="validationTextarea" class="form-label">A continuacion le pediremos una breve descripcion de lo que desea</label>
+              <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Descripcion" required></textarea>
+              <div class="invalid-feedback">
+                Por favor denos una breve descripcion de lo que desea.
+              </div>
+            </div>
+            <div class="mb-3">
+                <input type="file" class="form-control" aria-label="file example" required placeholder="adjunte imagen de lo que desea">
+                <div class="invalid-feedback">Example invalid form file feedback</div>
+              </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
+</div>
+
+<footer class="footer">
+    <div class="footer__contacto">
+      <div class="footer__contacto__tel">
+        <h3>
+          Contactanos
+        </h3>
+        <p>
+          Tel | Wapp: (+54) 221 xxxxxxx
+        </p>
+        <p>
+          info@dulcinella.com.ar
+        </p>
+      </div>
+      <div class="footer__contacto__redes">
+       <a href="https://www.facebook.com/D.BombonesArtesanales"><img src="../imagenes/facebook.png" alt="facebook" height="40px">
+      </a>
+      <a href="https://www.instagram.com/dulcinella_bsso/"><img src="../imagenes/instagram.png" alt="instagram" height="40px">
+      </a>
+      </div>
+    </div>
+    <div class="footer__copyright">
+      <p>
+        Copyright Dulcinella - 2021. Todos los derechos reservados. Defensa de las y los consumidores. Para reclamos
+        <a href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario" target="_blank">ingrese
+          aquí</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

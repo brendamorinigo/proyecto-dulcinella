@@ -8,96 +8,89 @@
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <!-- CSS only -->
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/estilos.css">
     <title>Eventos dulcinella</title>
   </head>
 
 
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><!-- aca va lo que quiero que diga el nav--></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../Dulcinella.html">Inicio</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./Eventos.html">Eventos</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./Ofertas.html">Ofertas</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./Tienda.html">Tienda</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">contacto</a>
-              </li>
-              </ul>
+    <div class="contenedor">
+      <header class="header">
+        <div class="logo">
+          <div class="img-logo">
+            <img src="../imagenes/logo.jfif" alt="Logo">
           </div>
-        </div>
-      </nav>
-    </header>
+          </div>
+          <h1>Dulcinella</h1>
+        <nav class="menu">
+          <a href="/index.html">Inicio</a>
+          <a href="/enlaces/Bombones.html">Bombones</a>
+          <a href="/enlaces/pedidos.html">Pedidos</a>
+          <a href="./Eventos.html">Eventos</a>
+          <a href="./contacto.html">Contacto</a>
+        </nav>
+      </header>
+    </div>
+
+    <div class="separadoreventos">
+      <h1>
+        Eventos
+      </h1>
+    </div>
+
 <main>
     <section>
       <div class="container-eventos">
-
-        <h1 div class="card__titulo">Eventos</h1>
-
-        <div class="card">
-          <a href="imagen" class="card__img"
-            ><img src="../imagenes/feria.jpg" alt="Feria en plaza moreno"
-          /></a>
-          <div class="card__txt">
-
-            <h3 class="card__titulo">Feria Plaza moreno</h3>
-
-            <p class="card__texto">
-              Fines de semana y feriados podes encontrarnos en Plaza Moreno,
-              rodeados de artesanos, juegos y una hermosa feria, podes
-              pasar a degustar nuestros chocolates, disfrutar de un hermoso
-              dia y divertirse.
+        <div class="card-eventos">
+          <div class="card-txt">
+            <p class="card-show">
+              <h2>Showroom</h2>
+                Queres realizar un evento y aun no nos conoces? <br>
+                Animate! Reserva tu lugar y veni a conocernos lunes o viernes a nuestro Showroom, conoce nuestros productos y disfruta de todas las variedades y colores de chocolates que tenemos para ofrecerte.
             </p>
           </div>
         </div>
-      </div>
+        <div class="card-feria">
+          <div class="card-txt">
+            <p class="card-show">
+              <h2>Feria</h2>
+                Podes encontrarnos los dias sabados y domingos de 10hs a 17hs en plaza moreno, en FERIA DE ARTESANOS. <br>
+                Podes pasar a conocernos y a distrutar de una hermosa tarde en familia!
 
-      <div class="container-eventos">
-        <div class="card">
-          <a href="imagen" class="card__img"
-            ><img src="../imagenes/chocoart-chocolates-con-flores.jpg" alt="Showroom"
-          /></a>
-          <div class="card__txt">
-
-            <h3 class="card__titulo">Showroom</h3>
-
-            <p class="card__show">
-                Queres realizar un evento y aun no nos conoces?
-                Animate! veni a conocernos de lunes a viernes a nuestro Showroom, en donde podes conocer y probar nuestros productos.
             </p>
           </div>
         </div>
-      </div>
+      </div> 
 </section>
 </main>
 
-
-
-<div class="alert alert-dark" role="alert">
-  A simple dark alert—check it out!
-</div>
-
-
-
+<footer class="footer">
+  <div class="footer__contacto">
+    <div class="footer__contacto__tel">
+      <h3>
+        Contactanos
+      </h3>
+      <p>
+        Tel | Wapp: (+54) 221 xxxxxxx
+      </p>
+      <p>
+        info@dulcinella.com.ar
+      </p>
+    </div>
+    <div class="footer__contacto__redes">
+     <a href="https://www.facebook.com/D.BombonesArtesanales"><img src="../imagenes/facebook.png" alt="facebook" height="40px">
+    </a>
+    <a href="https://www.instagram.com/dulcinella_bsso/"><img src="../imagenes/instagram.png" alt="instagram" height="40px">
+    </a>
+    </div>
+  </div>
+  <div class="footer__copyright">
+    <p>
+      Copyright Dulcinella - 2021. Todos los derechos reservados. Defensa de las y los consumidores. Para reclamos
+      <a href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario" target="_blank">ingrese
+        aquí</a>
+    </p>
+  </div>
+</footer>
   </body>
 </html>

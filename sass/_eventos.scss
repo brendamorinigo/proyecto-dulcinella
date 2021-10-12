@@ -1,32 +1,61 @@
+.separadoreventos{
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  border-top:#ecb1b1 1px solid;
+  border-bottom:#ecb1b1 1px solid;
+  h1{
+    margin-top: 5px;
+  }
+}
+
 .container-eventos{
-    max-width:1000px;
-    width: 100%;
-    margin: 0 auto; 
-    min-width: 350px;
-    
-  
-      .card {
-        background: white;
+  margin: 0 auto;
+    width: 80%;
+
+      .card-eventos{
+        background-image: url(../imagenes/fondo.recorte.png);
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center;
         border-radius: 15px;
         padding: 20px;
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
+        flex-direction: column;
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
         position: relative;
-        margin-bottom: 50px;
+        margin-bottom: 3.125em; 
+        text-align: center;
       }
-  
-      img {
-        max-width: 400px;
-        max-height: 300px;
+      .card-feria{
+        background-image: url(/imagenes/chocoart-chocolates-con-flores.jpg);
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center;
+        border-radius: 15px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        position: relative;
+        margin-bottom: 3.125em; 
+        text-align: center;
       }
-  
-      .card__img {
-        max-width: 800px;
-      }
-  
-  
+.card-txt{
+  border-radius: 20px;
+  background: rgb(255, 255, 255);
+  opacity: 60%;
+  width: 80%;
+
+}
   }
+  
+  
+
+
+  

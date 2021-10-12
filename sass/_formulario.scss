@@ -1,0 +1,26 @@
+.formulario{ 
+    form{
+    width: 90%;
+    margin: 30px;
+    padding: 10px 20px;
+    margin: 0 auto;
+    opacity: 60%;
+    background: rgb(250, 238, 238);
+    display: flex;
+    flex-direction: column;}
+    input{
+        border: none;
+        margin: 10px;
+        border-radius: 5px;
+        box-sizing: border-box;}
+    }
+#boton{
+    background: rgb(253, 173, 200);
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
+}
+#boton:hover{
+    background: rgb(170, 65, 100);
+}
+.casilla{
+    width: 50%;
+}
