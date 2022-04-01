@@ -42,11 +42,12 @@ function agregarAlCarro(id){
     div.innerHTML = `            <p>${agregar.nombre}</p>
                                  <p>$${agregar.precio}</p>
                                  <button  class="btn" id="btn-eliminar${agregar.id}"></button>`;
+                                 
     carrito-contenedor.appendChild(div);
     carrito=carrito.filter(elemento => elemento.id != agregar.id)
 }
 
- 
+  
  
 
 
